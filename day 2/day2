@@ -1,0 +1,65 @@
+# #if
+# age=int(input("Enter your age: "))
+
+# if age>= 18:
+#     print("you are an adult!")
+
+# #else
+# else:
+#     print("you are a minor!")
+
+
+#elif
+
+# grade=float(input("Enter your grade: "))
+
+# if grade>=90:
+#     print('excellent')
+# elif grade >= 75:
+#     print('very good')
+# elif grade >= 60:
+#     print('good')
+# else:
+#     print("need improvement")
+
+
+# comparion operators
+
+# sport=input("Enter your favorite sport: ").lower()
+
+# if sport=="basketball":
+#     print("basketball player")
+# else:
+#     print("diffrenet sport")
+
+#and
+
+# sleep=float(input("Enter your sleep hours: "))
+# energy=float(input("Enter your energy level 1-10: "))
+
+# if sleep>=7 and energy>=7:
+#     print("you are well rested and energetic!")
+# else:
+#     print("you need more rest or energy!")
+
+# or
+# sleep = float(input("How many hours did you sleep? "))
+# soreness = int(input("Rate your soreness from 1 to 10: "))
+
+# if sleep < 6 or soreness >= 8:
+#     print("Recovery day recommended")
+# else:
+#     print("Training is okay")
+
+# day 2 challenge
+
+sleep=float(input("How many hours did you sleep? "))
+energy=float(input('Rate your energy level from 1 to 10: '))
+soreness=float(input("Rate your soreness from 1 to 10: "))
+
+if sleep<6 or soreness>=8:
+    print("Recovery day recommended")
+elif sleep>=7 and energy>=7 and soreness <=5:
+    print("You are ready for a strong training session")
+else:
+    print("Train moderately today")
