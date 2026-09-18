@@ -1,0 +1,60 @@
+# loop
+# for i in range(5):
+#     print(i+1)
+
+# for i in range(7):
+#     print(f"training day {i+1}")
+
+# total =0
+# highest=0
+# highest_day=0
+
+# for i in range(7):
+#     hours=float(input(f"how many hours did u train on day {i+1}?"))
+#     total+=hours
+#     if hours>highest:
+#         highest=hours
+#         highest_day=i+1
+
+# average=total/7
+
+
+# print(f"avg hour per day trained: {average:.2f} , highest training hour was on day {highest_day}: {highest:.2f},")
+
+
+#while loop
+# count=0
+# while count<5:
+#     print(count+1)
+#     count+=1
+
+# energy=0
+# energy=float(input("how much energy do you have 1-10:"))
+# while energy<1 or energy>10:                                 
+#     energy=float(input("invalid input, how much energy do you have 1-10:"))
+
+# print(f"Energy level accepted: {energy}")
+
+#day 3 challenge
+
+total=0
+avg=0
+highest=0
+highest_day=0
+
+for i in range(7):
+    hours=float(input(f"how many hours did you train on day {i+1}?"))
+    while hours<0:
+        print("invalid number of hours enter number above 0 or equal 0" )
+        hours=float(input(f"how many hours did you train on day {i+1}?"))
+    total+=hours
+    if hours>=highest:
+        highest=hours
+        highest_day=i+1
+
+avg=total/7
+
+print(f"total weekly hours={total}")
+print(f"average training hour per day {avg:.2f}")
+print(f"highest training hours was on {highest_day} = {highest}")
+
